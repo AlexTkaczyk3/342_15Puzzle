@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id = "root2" styleClass="border" fx:controller = "PuzzleController">
+	
+	<top><MenuBar fx:id="gameMenuBar" maxWidth = "210">
+      <menus>
+         <Menu text="Game Options">
+            <items>
+               <MenuItem fx:id="howItem" text="How To Play" onAction = "#howToItemMethod"/>
+               <MenuItem text="New Puzzle" onAction = "#newPuzzleItemMethod"/>
+               <MenuItem text="Exit" onAction = "#exitItemMethod"/>
+            </items>
+         </Menu>
+         <Menu fx:id="solutionMenu" text="Solve Options">
+            <items>
+               <MenuItem fx:id="h1Item" text="AI H1" onAction = "#hOneItemMethod"/>
+               <MenuItem fx:id="h2Item" text="AI H2" onAction = "#hTwoItemMethod"/>
+            </items>
+         </Menu>
+      </menus>
+    </MenuBar></top>
+	
+	<center><GridPane fx:id = "gameGrid" alignment="center" maxHeight = "450" maxWidth = "450" BorderPane.alignment="TOP_RIGHT">
+	</GridPane></center>
+	
+	<left><VBox fx:id = "howToVBox" alignment = "CENTER" maxHeight = "450" maxWidth = "300" BorderPane.alignment="CENTER">
+		<Label fx:id = "howToLabel"/>
+		<Button fx:id = "dismissBtn" text = "Dismiss" onAction = "#dismissBtnMethod"/>
+	</VBox></left>
+	
+	<bottom><Button fx:id="solutionItem" text="See Solution" onAction = "#solutionItemMethod" BorderPane.alignment="CENTER"/></bottom>
+	
+</BorderPane>
+

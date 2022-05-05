@@ -1,0 +1,30 @@
+.button{
+	-fx-font-size: 25px;
+	-fx-font-weight: bold;
+	-fx-background-color: white;
+}
+
+.label{
+	-fx-text-alignment: center;
+}
+
+.root{
+	-fx-background-color: cornflowerblue;
+	-fx-font-family: 'serif';
+	-fx-padding: 40 40 40 40;
+}
+
+.gamegrid{
+	-fx-background-color: orange;
+	-fx-background-radius: 5.0;
+	-fx-background-insets: 20.0 20.0 20.0 20.0;
+    -fx-padding: 10;
+    -fx-hgap: 20;
+    -fx-vgap: 20;
+}
+
+.vbox{
+	-fx-background-color: lightGrey;
+	-fx-background-radius: 5.0;
+	-fx-spacing: 100;
+}
